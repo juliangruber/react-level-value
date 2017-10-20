@@ -1,0 +1,27 @@
+{
+  "name": "react-level-value",
+  "version": "0.0.0",
+  "description": "Live updating leveldb value component for react",
+  "scripts": {
+    "build": "cd example && webpack",
+    "start": "npm run build && electron-quick --dev example/build.js",
+    "rebuild": "npm rebuild --runtime=electron --target=$(electron --version) --abi=$(electron --abi) --disturl=\"https://atom.io/download/atom-shell\""
+  },
+  "repository": "juliangruber/react-level-value",
+  "author": "Julian Gruber (mail@juliangruber.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "electron-quick": "^1.2.0",
+    "level": "^2.0.0-rc3",
+    "webpack": "^3.6.0"
+  },
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  }
+}
